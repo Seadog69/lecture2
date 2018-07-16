@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block headblock %}
+    Second Page
+{% endblock %}
+
+{% block bodyblock %}
+        <p>
+            Donec odio. Quisque volutpat mattis eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        </p>
+        
+        <!-- url_for generates URL to link back to the more function in application.py -->
+        <a href="{{ url_for('index') }}">Click here to return to First page</a>
+
+{% endblock %}

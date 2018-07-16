@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Is it New Year's?</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            .yes {
+                color: Green;
+            }
+            .no {
+                color: Red;
+            }
+        </style>
+    </head>
+
+    <body>
+        {% if new_year %}   <!-- check to see if boolean is true using jinja2 -->
+            <h2 class="yes">Yes! Happy New Year!</h2>
+        {% else %}
+            <h2 class="no">No.</h2>
+        {% endif %}
+    </body>
+</html>
